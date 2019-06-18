@@ -35,6 +35,9 @@ class Deck:
 
     def shuffle(self):
         random.shuffle(self.deck)
-        
+            
+
     def deal(self):
-        pass
+        self.card = self.deck[0]
+        self.deck.pop(0)
+        return self.card
